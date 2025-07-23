@@ -1,11 +1,13 @@
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    font-size: 100px;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    background-color: powderblue;
 }
 
 .topnav {
@@ -15,16 +17,17 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 0;
+  height: 2%;
+  padding: 30px 0px;
   z-index: 9999;
 }
 
 .topnav a {
-  float: left;
+  float: center;
   color: #f2f2f2;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 14px 16px;
+  padding: 30px 30px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -35,6 +38,6 @@ body {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #eafc4b;
+  color: black;
 }
