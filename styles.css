@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 h1 {
     padding: 300px 00px 0px 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 100px;
+    font-size: 120px;
     color: #ebf2fa;
     opacity: 1;
-    /* Text outline using text-shadow */
+    font-weight: bold;
     text-shadow:
       -2px -2px 0 #000,
       2px -2px 0 #000,
@@ -19,11 +21,12 @@ h1 {
 
 h2 {
     padding: 0px 0px 0px 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: #ebf2fa;
     opacity: 1;
+    font-weight: bold;
     text-shadow:
       -2px -2px 0 #000,
       2px -2px 0 #000,
@@ -36,10 +39,11 @@ h2 {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
     background-color: #679436;
     margin: 0;
+    font-size: 20px;
 }
 
 .topnav {
@@ -58,7 +62,7 @@ body {
   float: center;
   color: #ebf2fa;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Merriweather', serif;
   padding: 30px 30px;
   text-decoration: none;
   font-size: 17px;
