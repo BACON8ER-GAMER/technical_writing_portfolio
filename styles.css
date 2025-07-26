@@ -111,3 +111,18 @@ body {
   word-wrap: break-word;
   background-color: #ebf2fa;
 }
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  width: 66.66%;
+  word-wrap: break-word;
+  background-color: #ebf2fa;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
