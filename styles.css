@@ -302,3 +302,16 @@ button:hover, input[type=submit]:hover {
   background: #05668d;
   box-shadow: 0 4px 16px rgba(5,102,141,0.12);
 }
+
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #427aa1;
+   color: #f8fafc;
+   text-align: center;
+   font-size: 1.05em;
+   padding: 24px 0 20px 0;
+   letter-spacing: 0.5px;
+}
