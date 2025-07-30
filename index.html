@@ -9,6 +9,11 @@
     <meta name="description" content="Nate Alberda's technical writing portfolio showcasing his skills and projects.">
     <meta name="keywords" content="Technical Writer, Portfolio, Nate Alberda, Technical Writing, Samples, Resume, Contact">
     <meta name="author" content="Nate Alberda">
+    <script>
+        document.querySelector('.hamburger').onclick = function() {
+        document.querySelector('.topnav').classList.toggle('open');
+    };
+</script>
 </head>
 <body>
 <nav class="topnav">
@@ -54,9 +59,4 @@
 </div>
 
 </body>
-<script>
-  document.querySelector('.hamburger').onclick = function() {
-    document.querySelector('.topnav').classList.toggle('open');
-  };
-</script>
 </html>
