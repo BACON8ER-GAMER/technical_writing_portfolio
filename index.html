@@ -10,16 +10,22 @@
     <meta name="keywords" content="Technical Writer, Portfolio, Nate Alberda, Technical Writing, Samples, Resume, Contact">
     <meta name="author" content="Nate Alberda">
     <script>
-        document.querySelector('.hamburger').onclick = function() {
-        document.querySelector('.topnav').classList.toggle('open');
-    };
+        document.addEventListener('DOMContentLoaded', function() {
+          var hamburger = document.getElementById('hamburger');
+          var navLinks = document.getElementById('navLinks');
+            if (hamburger && navLinks) {
+              hamburger.addEventListener('click', function() {
+                navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
+    });
+  }
+});
 </script>
 </head>
 <body>
 <nav class="topnav">
-  <div class="nav-dropdown-topleft">
-    <button class="hamburger" aria-label="Open navigation">&#9776;</button>
-    <div class="nav-links">
+  <div class="nav-dropdown">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="nav-links" id="navLinks">
       <a class="active" href="index.html">Home</a>
       <a href="resume.html">R&eacute;sum&eacute;</a>
       <a href="samples.html">Samples</a>
@@ -46,17 +52,29 @@
     during college and has since pursued a career in technical writing, taking classes 
     in the University of Washington's Technical Writing certificate program. 
     He has a passion for technology, having been able to work a TV remote at the 
-    age of two. He currently lives in Kenmore, Washington.
-</p>
-<p class="wordcontainer">
+    age of two. 
+    <br>
+    <br>
     Nate has a Bachelor of Arts in Music Production from Pacific University, 
     and is currently enrolled in the Professional Technical Writing Certificate program 
-    at the University of Washington. He is expected to graduate in November 2025.
+    at the University of Washington. He is expected to graduate in November 2025. He currently lives in Kenmore, Washington.
 </p>
 
 <div class="footer">
   <p>&copy; 2025 Nate Alberda. All Rights Reserved.</p>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function() {
+          navLinks.classList.toggle('open');
+    });
+  }
+});
+</script>
 
 </body>
 </html>

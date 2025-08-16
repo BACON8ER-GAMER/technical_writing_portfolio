@@ -9,23 +9,19 @@
     <meta name="description" content="Nate Alberda's technical writing portfolio showcasing his skills and projects.">
     <meta name="keywords" content="Technical Writer, Portfolio, Nate Alberda, Technical Writing, Samples, Resume, Contact">
     <meta name="author" content="Nate Alberda">
-    <script>
-        document.querySelector('.hamburger').onclick = function() {
-        document.querySelector('.topnav').classList.toggle('open');
-    };
-    </script>
+   
 </head>
 <body>
 
 <nav class="topnav">
     <div class="nav-dropdown-topleft">
-        <button class="hamburger" aria-label="Open navigation">&#9776;</button>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="resume.html">R&eacute;sum&eacute;</a>
-                <a class="active" href="samples.html">Samples</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="resume.html">R&eacute;sum&eacute;</a>
+            <a class="active" href="samples.html">Samples</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 </nav>
 
@@ -65,7 +61,7 @@
 <p class="wordcontainer">Screenshot of the video project script.</p>
 
 <p class="wordcontainer">
-    <img class="container" src="https://github.com/BACON8ER-GAMER/technical_writing_portfolio/blob/main/Images/Video%20Project%20Script%20Screenshot.png?raw=true">
+    <img src="https://github.com/BACON8ER-GAMER/technical_writing_portfolio/blob/main/Images/Video%20Project%20Script%20Screenshot.png?raw=true">
 </p>
 
 <p class="wordcontainer">
@@ -114,6 +110,18 @@
 <div class="footer">
   <p>&copy; 2025 Nate Alberda. All Rights Reserved.</p>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function() {
+          navLinks.classList.toggle('open');
+    });
+  }
+});
+</script>
 
 </body>
 </html>
