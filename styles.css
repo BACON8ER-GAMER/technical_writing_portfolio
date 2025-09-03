@@ -172,14 +172,14 @@
     top: 60%;
     height:auto;
     font-size: 2em;
-    padding: 2vw 4vw;
+    padding: 3vw 5vw;
     transform: translate(-50%, 0);
   }
   .centered h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .centered h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .wordcontainer, h3.wordcontainer {
     width: 98%;
@@ -525,4 +525,20 @@ footer, .footer {
 
 html, body {
   overflow-x: hidden;
+}
+
+h3.wordcontainer {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+h4 {
+  text-align: left;
+  font-size: 1.25em;
+  margin-top: 0;
+}
+
+a.wordcontainer {
+  text-align: center;
 }
