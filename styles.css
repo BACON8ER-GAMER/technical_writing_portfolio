@@ -63,12 +63,13 @@
     top: auto !important;
     left: auto !important;
     transform: none !important;
-    width: 100vw !important;
+    width: 70vw !important;
     max-width: 120vw !important;
     min-width: 0 !important;
     margin: 1em auto !important;
     height: auto !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    font-size: 2em;
   }
   .wordcontainer, h3.wordcontainer {
     width: 98%;
@@ -172,7 +173,7 @@
     top: 60%;
     height:auto;
     font-size: 2em;
-    padding: 3vw 5vw;
+    padding: 2vw;
     transform: translate(-50%, 0);
   }
   .centered h1 {
@@ -332,7 +333,7 @@ h1 {
     margin-bottom: 1vw;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 64px;
+    font-size: 2em;
     color: #222;
     opacity: 1;
     font-weight: 700;
