@@ -71,7 +71,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     font-size: 2em;
   }
-  .wordcontainer, h3.wordcontainer {
+  .wordcontainer {
     width: 98%;
     padding: 10px;
     font-size: 16px;
@@ -137,22 +137,6 @@
     padding: 18px 28px;
     margin: 0 6px;
   }
- 
-  /*.nav-dropdown .nav-links {
-    display: none;
-    flex-direction: column;
-    min-width: 180px;
-    width: max-content;
-    background: #fff;
-    position: absolute;
-    top: 100vw;
-    left: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    z-index: 10000;
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
-    border: 1px solid #e0e0e0;
-  }*/
 
   body {
     font-size: 16px;
@@ -542,4 +526,15 @@ h4 {
 
 a.wordcontainer {
   text-align: center;
+}
+
+h5.wordcontainer {
+  font-family: 'Raleway', 'Merriweather', serif;
+  font-size: 4em;
+  color: #427aa1;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+  background: none;
+  font-weight: 700;
 }
