@@ -470,6 +470,8 @@ body {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  animation-name: slidein;
+  animation-duration: 0.5s;
 }
 
 h3 {
@@ -624,6 +626,8 @@ ul {
   display: block;
   object-fit: contain;
   border-radius: 8px;
+  animation-name: fadein;
+  animation-duration: 1.5s;
 }
 
 .herosection h1 {
@@ -631,6 +635,8 @@ ul {
   font-family: 'Raleway', 'Merriweather', serif;
   text-shadow: 2px 2px 2px #222;
   color: #fff;
+  animation-name: fadein;
+  animation-duration: 1.5s;
 }
 
 /* Stack hero image above text on small screens */
@@ -653,5 +659,23 @@ ul {
     width: 90%;
     font-size: 2rem;
     margin: 0.5rem auto 0 auto;
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(100vw);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
