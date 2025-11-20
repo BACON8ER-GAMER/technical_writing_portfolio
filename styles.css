@@ -2,6 +2,22 @@
 @media (max-width: 900px) {
 
 /* Dropdown container for hamburger and nav-links */
+  .nav-brand {
+    display: none;
+  }
+
+  .nav-brand-mobile {
+    display: absolute;
+    font-family: 'Raleway', 'Merriweather', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #427aa1;
+    padding: 18px 28px;
+    position: absolute;
+    left: 0;
+    background: #fff;
+  }
+
   .nav-dropdown {
   position: relative;
   display: flex;
@@ -114,6 +130,25 @@
     width: 98% !important;
     min-width: 0;
     font-size: 16px;
+  }
+
+    .herosection {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  .herosection img {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .herosection h1 {
+    width: 90%;
+    font-size: 2rem;
+    margin: 0.5rem auto 0 auto;
   }
 }
 /* Hide hamburger on desktop */
@@ -374,10 +409,30 @@ body {
   gap: 0.5rem;
 }
 
+.nav-brand {
+  font-family: 'Raleway', 'Merriweather', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #427aa1;
+  padding: 18px 28px;
+  position: absolute;
+  left: 0;
+}
+
+.nav-brand-mobile {
+  display: none;
+}
+
+.nav-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .topnav a {
   color: #427aa1;
   text-align: center;
-  font-family: 'Roboto', 'Merriweather', serif;
+  font-family: 'Raleway', 'Merriweather', serif;
   padding: 18px 28px;
   text-decoration: none;
   font-size: 18px;
@@ -499,7 +554,7 @@ footer, .footer {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: #427aa1;
+   background-color: #05668d;
    color: #f8fafc;
    text-align: center;
    font-size: 1.05em;
@@ -522,6 +577,8 @@ h4 {
   text-align: left;
   font-size: 1.25em;
   margin-top: 0;
+  font-family: 'Raleway', 'Merriweather', serif;
+
 }
 
 a.wordcontainer {
@@ -542,4 +599,59 @@ h5.wordcontainer {
 ul {
   list-style-type: disc;
   padding-left: 2em;
+}
+
+.herosection {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Raleway', 'Merriweather', serif;
+  color: #05668d;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid #05668d;
+  background-color: #05668d;
+}
+
+.herosection img {
+  width: 20%;
+  height: auto;
+  max-width: 20%;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.herosection h1 {
+  text-align: center;
+  font-family: 'Raleway', 'Merriweather', serif;
+  text-shadow: 2px 2px 2px #222;
+  color: #fff;
+}
+
+/* Stack hero image above text on small screens */
+@media (max-width: 900px) {
+  .herosection {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .herosection img {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .herosection h1 {
+    width: 90%;
+    font-size: 2rem;
+    margin: 0.5rem auto 0 auto;
+  }
 }
